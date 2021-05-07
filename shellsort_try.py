@@ -2,8 +2,6 @@ def shellsort(dl):
     gap = len(dl) // 2
     size = len(dl)
     while gap > 0:
-        x = [d for d in range(gap,size)]
-        print(x)
         for i in range(gap, size):
             while i >= gap and dl[i-gap] > dl[i]:
                 tmp = dl[i]
